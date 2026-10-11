@@ -1,0 +1,139 @@
+.hero-visual{height:570px;min-width:0}
+.phone-scene{position:relative;width:100%;height:100%;isolation:isolate;perspective:1100px}
+.scene-glow{position:absolute;inset:40px -20px 30px;background:radial-gradient(ellipse at 55% 50%,#1677ff30,transparent 65%);z-index:-1}
+.scene-ring{position:absolute;width:390px;height:390px;border:1px solid #71d8ff16;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%);z-index:-1}
+.scene-ring.outer{width:490px;height:490px;border-style:dashed;border-color:#71d8ff0e}
+.iphone-mockup{width:264px;height:530px;position:absolute;top:7px;left:calc(50% - 76px);padding:7px;border-radius:47px;background:linear-gradient(110deg,#e0e8f0 0%,#8394a9 12%,#283749 37%,#8e9caa 80%,#d8e3ee 100%);box-shadow:inset 0 0 0 1px #eef8ffad,4px 4px 0 #374859,9px 9px 0 #1a283b,16px 25px 50px #0007;transform:rotateY(-13deg) rotateZ(5deg);z-index:2}
+.phone-screen{height:100%;overflow:hidden;border-radius:40px;background:#edf3ee;color:#17352d;border:4px solid #070c14;display:flex;flex-direction:column;position:relative}
+.phone-side-button{position:absolute;background:linear-gradient(90deg,#63768b,#d1dde7,#687e92);width:3px;border-radius:3px}.phone-side-button.volume{left:-3px;top:121px;height:55px}.phone-side-button.power{right:-5px;top:156px;height:62px}
+.phone-status{height:48px;background:#f9fbfc;padding:13px 16px 0;display:flex;justify-content:space-between;align-items:flex-start;position:relative;flex-shrink:0;color:#10212c;font-size:10px}
+.phone-status>span{display:flex;align-items:center;gap:3px;padding-top:1px}.dynamic-island{position:absolute;top:9px;left:50%;transform:translateX(-50%);width:78px;height:24px;border-radius:20px;background:#070c14;box-shadow:inset 0 1px 2px #ffffff18}.dynamic-island i{position:absolute;right:10px;top:8px;width:7px;height:7px;background:radial-gradient(circle,#1e4563,#070c14);border-radius:50%}
+.phone-chat-heading{height:59px;display:flex;align-items:center;gap:9px;padding:0 12px;background:#f9fbfc;border-bottom:1px solid #d5e2dc;color:#25816c;flex-shrink:0}.phone-avatar{width:31px;height:31px;background:#1677ff;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:17px;font-weight:800;position:relative}.phone-avatar svg{position:absolute;bottom:1px;right:0;color:#00d6cc}.phone-contact{flex:1;min-width:0}.phone-contact strong{font-size:11px;color:#15332c;display:block}.phone-contact span{font-size:8px;color:#549180;display:block;margin-top:3px}
+.phone-conversation{flex:1;min-height:0;display:flex;flex-direction:column;gap:11px;padding:12px 11px;background-image:radial-gradient(#6b978424 1px,transparent 1px);background-size:16px 16px}
+.phone-date{align-self:center;font-size:7px;letter-spacing:.8px;padding:4px 9px;border-radius:4px;background:#ffffffba;color:#617c70}.phone-example{font-size:7px;text-align:center;color:#687e73;margin-top:-6px}
+.phone-message{width:89%;padding:9px 10px 5px;box-shadow:0 1px 3px #10302012;border-radius:0 9px 9px 9px;background:white}.phone-message.customer{align-self:flex-end;background:#d6f9e3;border-radius:9px 0 9px 9px}.phone-message p{font-size:10px;line-height:1.6;color:#193b30}.phone-message-time{display:flex;justify-content:flex-end;align-items:center;gap:3px;font-size:7px;color:#7a9186;margin-top:3px}.phone-message-time svg{color:#36a6db}.phone-order{border-left:2px solid #18a17e;background:#edf8f3;border-radius:5px;padding:8px;margin-top:6px}.phone-order>div{display:flex;gap:8px;justify-content:space-between;font-size:8px;margin-bottom:7px}.phone-order>div:first-child>span{color:#439178}.phone-order-status{display:flex;align-items:center;gap:4px;font-size:7px;color:#27826a;border-top:1px solid #25816c20;padding-top:6px}
+.phone-composer{display:flex;align-items:center;gap:9px;padding:10px 12px 6px;background:#f9fbfc;color:#3c8e77;flex-shrink:0}.phone-composer>span{display:flex;align-items:center;justify-content:space-between;flex:1;border:1px solid #dce5df;border-radius:20px;background:white;padding:7px 10px;color:#9aa9a1;font-size:9px}.phone-home-bar{height:4px;width:81px;background:#152223;border-radius:9px;margin:9px auto 7px;flex-shrink:0}
+.hero-owl-position{position:absolute;left:-19px;bottom:69px;width:202px;height:273px;z-index:3;perspective:700px;pointer-events:none}.owl-follow{width:260px;height:310px;transform-origin:50% 65%;transform:scale(.73) rotateX(var(--turn-x,0deg)) rotateY(var(--turn-y,0deg));transition:transform .18s ease-out;transform-style:preserve-3d}.owl-follow .owl{animation:none;filter:drop-shadow(8px 16px 14px #0006)}.owl-follow .owl-eye i{transform:translate(var(--look-x,0px),var(--look-y,0px));transition:transform .12s ease-out}.owl-follow .owl-body{box-shadow:inset -16px -12px 22px #344f766b,inset 12px 9px 14px #fff,0 0 22px #00d6cc10}.owl-follow .owl-chest{color:#00a9c4}.owl-introduction{position:absolute;left:11px;bottom:-4px;text-align:center;white-space:nowrap}.owl-introduction span{color:#00d6cc;font-size:8px;letter-spacing:2px;font-weight:800}.owl-introduction p{font-size:8px;color:#a7bfd4;margin-top:5px}.phone-demo-link{position:absolute;bottom:-7px;left:calc(50% - 54px);text-align:center;font-size:9px;letter-spacing:.2px;color:#a5bdd4;z-index:4}.phone-demo-link span{display:block;font-size:9px;color:#00d6cc;margin-top:7px;font-weight:700}.phone-demo-link:hover span{color:white}
+/* Each illustration and caption owns its space, including at narrow widths. */
+.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;padding-top:48px;padding-bottom:48px}
+.hero-copy{min-width:0;position:relative;z-index:5}
+.hero h1{font-size:clamp(58px,6.4vw,82px);line-height:1.1;letter-spacing:-3px;overflow-wrap:normal}
+.hero-copy>p{font-size:19px;max-width:500px;line-height:1.8}
+.hero-label{font-size:12px;line-height:1.7;letter-spacing:1.2px}
+.hero-buttons{flex-wrap:wrap}
+.hero-buttons .button{font-size:14px}
+.hero-trust{font-size:12px;flex-wrap:wrap;gap:14px 20px}
+.hero-visual{height:auto;width:100%;max-width:540px;transform:none;margin:0;min-width:0;justify-self:center}
+.phone-scene{display:grid;grid-template-columns:minmax(0,290px) minmax(0,180px);gap:24px 20px;justify-content:center;align-items:center;height:auto;padding:8px 0 12px}
+.iphone-mockup{position:relative;inset:auto;width:100%;height:610px;transform:none;grid-column:1;grid-row:1}
+.hero-owl-position{position:relative;inset:auto;width:100%;height:auto;grid-column:2;grid-row:1;align-self:center;display:flex;flex-direction:column;align-items:center;gap:16px;min-width:0}
+.owl-follow{width:260px;height:310px;zoom:.64;transform:rotateX(var(--turn-x,0deg)) rotateY(var(--turn-y,0deg));transform-origin:center}
+.owl-introduction{position:static;white-space:normal;text-align:center;width:100%;padding:0 4px}
+.owl-introduction span{font-size:12px;letter-spacing:1.2px}
+.owl-introduction p{font-size:14px;line-height:1.6;color:#c5d6e8;margin-top:9px}
+.phone-demo-link{position:static;grid-column:1/-1;font-size:15px;line-height:1.6;justify-self:center;text-align:center;color:#c5d6e8}
+.phone-demo-link span{font-size:14px;margin-top:8px}
+.phone-contact strong{font-size:14px}.phone-contact span{font-size:11px}
+.phone-date,.phone-example{font-size:10px}.phone-example{margin-top:-3px}
+.phone-conversation{gap:12px;padding:14px 12px;overflow-y:auto}
+.phone-message{flex-shrink:0}.phone-message p{font-size:13px;line-height:1.6}
+.phone-message-time{font-size:9px}.phone-order>div{font-size:11px;gap:6px}
+.phone-order-status{font-size:10px}.phone-composer>span{font-size:12px}
+/* A compact first screen: copy and illustration remain beside each other. */
+.hero-grid{min-height:0;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);gap:44px;padding-top:26px;padding-bottom:26px}
+.hero-visual{max-width:490px}
+.hero h1{font-size:clamp(50px,5.6vw,72px);line-height:1.08}
+.hero-label{font-size:10px;margin-bottom:20px}
+.hero-copy>p{font-size:18px;line-height:1.65;margin-top:22px}
+.hero-buttons{margin-top:24px;gap:10px}.hero-buttons .button{font-size:13px;padding:13px 17px}
+.hero-trust{font-size:11px;margin-top:18px}
+.phone-scene{grid-template-columns:minmax(0,260px) minmax(0,160px);gap:16px 30px;padding:12px 12px 0}
+.iphone-mockup{width:260px;height:490px;justify-self:center;transform:rotateY(-18deg) rotateZ(-7deg);transform-origin:center;box-shadow:inset 0 0 0 1px #eef8ffad,5px 2px 0 #52677b,10px 3px 0 #283a50,18px 20px 40px #0006}
+.phone-status{height:39px;padding-top:11px}.dynamic-island{top:7px;height:22px}
+.phone-chat-heading{height:49px;gap:7px}
+.phone-conversation{gap:8px;padding:9px 10px;overflow-y:auto}
+.phone-message{padding:7px 9px 4px}.phone-message p{font-size:11px;line-height:1.45}
+.phone-date,.phone-example{font-size:8px}.phone-message-time{font-size:8px;margin-top:2px}
+.phone-order{padding:6px;margin-top:4px}.phone-order>div{font-size:9px;margin-bottom:5px}.phone-order-status{font-size:8px;padding-top:4px}
+.phone-composer{padding:7px 10px 4px}.phone-home-bar{margin-top:6px}
+.hero-owl-position{gap:8px;align-self:center}
+.owl-follow{zoom:.58}
+.owl-follow .owl-face{border-radius:47% 47% 44% 44%;height:126px}
+.owl-follow .owl-eye{height:71px;width:67px;background:radial-gradient(circle at 42% 38%,#ddfffa 0%,#2ae7da 38%,#078e93 61%,#073b56 67%)}
+.owl-follow .owl-eye i{height:36px;width:30px}
+.owl-follow .owl-beak{bottom:10px;width:19px;height:17px;background:linear-gradient(120deg,#ffdf88,#e9a447)}
+.owl-smile{position:absolute;bottom:2px;left:calc(50% - 12px);width:24px;height:9px;border-bottom:2px solid #62e2d5;border-radius:0 0 50% 50%;box-shadow:0 2px 4px #00d6cc18}
+.owl-cheek{position:absolute;bottom:18px;width:17px;height:7px;border-radius:50%;background:#43e2d83d;box-shadow:0 0 8px #00d6cc23}.owl-cheek.left{left:22px}.owl-cheek.right{right:22px}
+.owl-follow .owl-chest{bottom:22px;gap:1px;padding:7px;background:linear-gradient(145deg,#f7fbff,#b6d6e5);border-radius:15px}
+.owl-name-badge{font-size:11px;letter-spacing:2px;color:#183955;font-weight:800}
+.owl-follow .owl-wing.right{transform-origin:top center;transform:rotate(-37deg);top:111px;right:5px}
+.owl-introduction span{font-size:11px;letter-spacing:1px}.owl-introduction p{font-size:12px;line-height:1.5;margin-top:6px}
+.phone-demo-link{font-size:12px;line-height:1.4}.phone-demo-link span{display:inline;font-size:12px;margin-left:10px}
+.hero-bottom{padding-top:18px;padding-bottom:20px}
+@media(min-width:1101px) and (max-height:760px){
+  .hero-grid{padding-top:18px;padding-bottom:18px}
+  .iphone-mockup{zoom:.9}.phone-scene{grid-template-columns:234px 150px;gap:14px 25px}
+  .hero h1{font-size:62px}.hero-copy>p{font-size:17px}
+}
+@media(max-width:1100px) and (min-width:761px){
+  .hero-grid{gap:24px}.hero h1{font-size:clamp(44px,5.3vw,60px);letter-spacing:-2px}
+  .hero-copy>p{font-size:16px}.hero-label{font-size:9px;letter-spacing:.8px}
+  .hero-buttons .button{font-size:11px;padding:11px 13px}
+  .phone-scene{grid-template-columns:190px minmax(0,120px);gap:14px 16px;padding:12px 4px 0}
+  .iphone-mockup{zoom:.73}.owl-follow{zoom:.43}
+  .owl-introduction span{font-size:9px}.owl-introduction p{font-size:11px}
+  .phone-demo-link{font-size:11px}.phone-demo-link span{display:block;margin:6px 0 0;font-size:11px}
+}
+@media(max-width:760px){
+  .hero-grid{grid-template-columns:1fr;gap:20px;padding-top:25px;padding-bottom:22px}
+  .hero-copy{max-width:580px}.hero h1{font-size:clamp(42px,7.8vw,56px);letter-spacing:-2px}
+  .hero-label{font-size:9px;letter-spacing:.7px;margin-bottom:13px}
+  .hero-copy>p{font-size:15px;line-height:1.55;margin-top:15px}
+  .hero-buttons{margin-top:16px}.hero-buttons .button{font-size:11px;padding:11px 13px;width:auto}
+  .hero-trust{font-size:10px;margin-top:12px;gap:10px}
+  .hero-visual{height:auto;transform:none;margin:0;width:100%;max-width:390px}
+  .phone-scene{grid-template-columns:177px minmax(0,125px);gap:12px 20px;padding:10px 8px 0}
+  .iphone-mockup{zoom:.68;grid-column:1;grid-row:1}
+  .hero-owl-position{grid-column:2;grid-row:1;flex-direction:column;gap:7px;justify-content:center}
+  .owl-follow{zoom:.43;flex-shrink:0}
+  .owl-introduction{text-align:center;padding:0}.owl-introduction span{font-size:9px}.owl-introduction p{font-size:11px}
+  .phone-demo-link{grid-column:1/-1;grid-row:2;font-size:11px}.phone-demo-link span{font-size:11px}
+  .scene-ring{width:280px;height:280px}.scene-ring.outer{width:330px;height:330px}
+  .hero-bottom{display:none}
+}
+@media(max-width:380px){
+  .hero h1{font-size:40px}.hero-copy>p{font-size:14px}
+  .phone-scene{grid-template-columns:156px minmax(0,105px);gap:12px 14px}
+  .iphone-mockup{zoom:.6}.owl-follow{zoom:.37}
+  .owl-introduction p{font-size:10px}.hero-buttons .button{font-size:10px;padding:10px}
+}
+@media(prefers-reduced-motion:reduce){.owl-follow,.owl-follow .owl-eye i{transition:none}}
+
+/* Shared 14-second rhythm: float, greet, glance at the phone notification. */
+.phone-scene .owl-follow .owl{animation:owl-breathe 3s ease-in-out infinite,owl-phone-glance 10s ease-in-out infinite!important;transform-style:preserve-3d}
+.phone-scene .owl-follow .owl-wing.right{animation:owl-greeting 10s ease-in-out infinite!important;transform-origin:50% 12%}
+.phone-scene .owl-follow .owl-eye i{animation:owl-notification-eyes 10s ease-in-out infinite!important;transition:transform .12s ease-out!important}
+.phone-scene .owl-follow .owl-eye{animation:owl-blink 10s ease-in-out infinite!important;transform-origin:center}
+.phone-scene .owl-follow .owl-chest{animation:owl-status-light 10s ease-in-out infinite!important}
+.yupi-notification{position:absolute;top:48px;left:9px;right:9px;z-index:6;display:flex;align-items:center;gap:8px;padding:11px 9px;border:1px solid #ffffffdd;border-radius:15px;background:#f5fbfff5;color:#16334b;box-shadow:0 8px 23px #08162d33;backdrop-filter:blur(12px);pointer-events:none;opacity:0;animation:yupi-notification-arrival 14s ease-in-out infinite}
+.notification-logo{display:grid;place-items:center;flex-shrink:0;width:37px;height:37px;background:linear-gradient(140deg,#1677ff,#0d436f);border-radius:10px;box-shadow:inset 0 1px 0 #ffffff55}
+.owl-logo{width:32px;height:32px}.notification-content{min-width:0;flex:1}.notification-content>div{display:flex;align-items:center;justify-content:space-between;gap:5px}.notification-content strong{font-size:10px;letter-spacing:.3px}.notification-content>div>span{font-size:8px;color:#698294}.notification-content p{font-size:10px;font-weight:700;line-height:1.5;margin-top:3px}.notification-content small{display:block;font-size:8px;color:#567387;margin-top:2px}
+@keyframes owl-breathe{0%,100%{translate:0 0}50%{translate:0 -13px}}
+@keyframes owl-phone-glance{0%,47%,82%,100%{transform:rotateZ(0deg) rotateY(0deg)}55%,73%{transform:rotateZ(-5deg) rotateY(-17deg)}}
+@keyframes owl-greeting{0%,29%,100%{transform:rotate(-37deg)}4%,12%,20%{transform:rotate(-85deg)}8%,16%,24%{transform:rotate(-45deg)}}
+@keyframes owl-notification-eyes{0%,47%,82%,100%{transform:translate(var(--look-x,0px),var(--look-y,0px))}55%,73%{transform:translate(-10px,-3px)}}
+@keyframes owl-blink{0%,32%,35%,88%,91%,100%{transform:scaleY(1)}33.5%,89.5%{transform:scaleY(.12)}}
+@keyframes owl-status-light{0%,47%,82%,100%{box-shadow:inset 0 1px 3px white,0 3px 6px #58728e44}55%,73%{box-shadow:inset 0 1px 3px white,0 0 19px #00d6cc65}}
+@keyframes yupi-notification-arrival{0%,47%,83%,100%{opacity:0;transform:translateY(-18px) scale(.97);visibility:hidden}52%,76%{opacity:1;transform:translateY(0) scale(1);visibility:visible}81%{opacity:0;transform:translateY(-10px);visibility:hidden}}
+/* The visitor explicitly controls this mascot, including on reduced-motion systems. */
+.phone-scene .yupi-notification{display:flex;animation:yupi-notification-arrival 10s ease-in-out infinite!important}
+.phone-scene[data-animated="false"] .owl-follow .owl,
+.phone-scene[data-animated="false"] .owl-follow .owl-wing.right,
+.phone-scene[data-animated="false"] .owl-follow .owl-eye,
+.phone-scene[data-animated="false"] .owl-follow .owl-eye i,
+.phone-scene[data-animated="false"] .owl-follow .owl-chest,
+.phone-scene[data-animated="false"] .yupi-notification{animation-play-state:paused!important}
+.phone-scene[data-animated="false"] .yupi-notification{visibility:hidden;opacity:0}
+.mascot-controls{grid-column:1/-1;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:9px 15px}
+.mascot-toggle{background:#122a43;border:1px solid #ffffff30;border-radius:20px;color:#d8e7f4;font-size:11px;padding:7px 12px;display:flex;align-items:center;gap:7px}
+.mascot-toggle:hover{border-color:#00d6cc;color:white}.mascot-toggle-dot{width:6px;height:6px;border-radius:50%;background:#00d6cc}.mascot-toggle[aria-pressed="false"] .mascot-toggle-dot{background:#8596a7}
