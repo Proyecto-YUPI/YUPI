@@ -2,8 +2,11 @@ import { useEffect, useRef, useState } from 'react';
 import { ArrowLeft, BatteryFull, CheckCheck, Mic, MoreHorizontal, Phone, Plus, Signal, Video, Wifi, Zap } from 'lucide-react';
 import './hero-visual.css';
 import OwlNotification from './OwlNotification';
+import FlyingOwl from './FlyingOwl';
 
+function OwlCharacter() { return <div className="owl"><div className="owl-ear left"/><div className="owl-ear right"/><div className="owl-body"><div className="owl-face"><div className="owl-eye"><i/></div><div className="owl-eye"><i/></div><div className="owl-cheek left"/><div className="owl-cheek right"/><div className="owl-beak"/><div className="owl-smile"/></div><div className="owl-chest"><span className="owl-name-badge">YUPI</span><Zap size={23}/></div></div><div className="owl-wing left"/><div className="owl-wing right"/><div className="owl-foot left"/><div className="owl-foot right"/></div>; }
 function WatchingOwl({ active }) {
+  const [flying, setFlying] = useState(false);
   const owlRef = useRef(null);
   useEffect(() => {
     if (!active) return;
@@ -44,7 +47,7 @@ function WatchingOwl({ active }) {
       media.removeEventListener('change', reset);
     };
   }, [active]);
-  return <div className="hero-owl-position"><div className="owl-follow" ref={owlRef} role="img" aria-label="YUPI, búho robótico con volumen 3D cuya mirada sigue el cursor"><div className="owl"><div className="owl-ear left"/><div className="owl-ear right"/><div className="owl-body"><div className="owl-face"><div className="owl-eye"><i/></div><div className="owl-eye"><i/></div><div className="owl-cheek left"/><div className="owl-cheek right"/><div className="owl-beak"/><div className="owl-smile"/></div><div className="owl-chest"><span className="owl-name-badge">YUPI</span><Zap size={23}/></div></div><div className="owl-wing left"/><div className="owl-wing right"/><div className="owl-foot left"/><div className="owl-foot right"/></div></div><div className="owl-introduction"><span>HOLA, SOY YUPI</span><p>Tú creas. Yo te acompaño.</p></div></div>;
+  return <div className={`hero-owl-position ${flying ? "is-flying" : ""}`}><FlyingOwl active={active} homeRef={owlRef} onFlying={setFlying}><OwlCharacter/></FlyingOwl><div className="owl-follow" ref={owlRef} role="img" aria-label="YUPI, búho robótico con volumen 3D cuya mirada sigue el cursor"><OwlCharacter/></div><div className="owl-introduction"><span>HOLA, SOY YUPI</span><p>Tú creas. Yo te acompaño.</p></div></div>;
 }
 
 const conversation = [
