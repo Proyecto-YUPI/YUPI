@@ -32,6 +32,22 @@ npm.cmd test
 
 Desktop and mobile hero screenshots are in `artifacts/`. There is no lint script in the current package configuration.
 
+## Docker production
+
+The project includes a production image that serves the Vite build and the
+`/api/send-demo-request` endpoint from the same container. The production
+Compose file in `../inventory-backend/docker-compose.production.yaml` builds
+YUPI as the `yupi` service and routes it through Caddy.
+
+Set `RESEND_API_KEY`, `RESEND_FROM_EMAIL` and `YUPPI_DEMO_RECIPIENT` in the
+backend's `.env.production`, then build and start the production stack from
+the backend directory:
+
+```bash
+docker compose --env-file .env.production -f docker-compose.production.yaml build yupi
+docker compose --env-file .env.production -f docker-compose.production.yaml up -d yupi caddy
+```
+
 ## Main files
 
 - `src/main.jsx`: landing page, language selector, concept demo and demo-request form.
