@@ -3,5 +3,5 @@ export function OwlLogo() {
 }
 
 export default function OwlNotification() {
-  return <div className="yupi-notification" aria-hidden="true"><span className="notification-logo"><OwlLogo/></span><div className="notification-content"><div><strong>YUPI IA</strong><span>ahora · demo</span></div><p>¡Nuevo pedido preparado! 🙌</p><small>Yo me encargo. Tú sigue creando.</small></div></div>;
+  return <div className="yupi-notification" aria-hidden="true"><span className="notification-logo"><OwlLogo/></span><div className="notification-content"><div><strong>YUPPI IA</strong><span>ahora · demo</span></div><p>¡Nuevo pedido preparado! 🙌</p><small>Yo me encargo. Tú sigue creando.</small></div></div>;
 }
